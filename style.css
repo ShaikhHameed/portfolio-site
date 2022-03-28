@@ -1,0 +1,259 @@
+@font-face {
+    font-family: "chomsky";
+    src: url(fonts/chomsky/Chomsky.otf) ;
+  }
+
+ @font-face {
+     font-family: "canopee";
+     src: url(fonts/VJ_Canopee/Canopee.otf);
+ } 
+
+ @font-face {
+     font-family:"Editorial" ;
+     font-weight:400;
+     src: url(fonts/Editorial_New_Font_Family/Editorial\ New\ Regular\ 400.otf);
+ }
+
+ @font-face {
+     font-family:"Editorial" ;
+     font-weight:800;
+     src: url(fonts/Editorial_New_Font_Family/Editorial\ New\ Ultrabold\ 800.otf);
+ }
+ @font-face {
+    font-family:"Editorial" ;
+    font-weight:200;
+     src: url(fonts/Editorial_New_Font_Family/Editorial\ New\ Ultralight\ 200.otf);
+ } 
+
+@font-face {
+    font-family:"akaposse" ;
+    src: url(fonts/akaposse/akaPosse.ttf);
+}  
+
+@font-face{
+    font-family:"angelwish" ;
+    src: url(fonts/angel-wish-font/AngelWishRegular-1G9wM.ttf);
+}
+
+@font-face {
+    font-family:"harry-potter" ;
+    src: url(fonts/harry-potter-font/HarryPotter-ov4z.ttf);
+}
+
+@font-face {
+    font-family:"quentin" ;
+    src: url(fonts/quentin-caps-font/Quentincaps-owxKz.ttf);
+}
+
+:root{
+    --dark:#222222;
+    --light:rgb(176, 179, 153);
+
+}
+
+body{
+    background-image: url("https://images.unsplash.com/photo-1615800098746-73af8261e3df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80");
+    background-size: cover;
+}
+
+p{
+    color:var(--dark);
+    font-family: "editorial";
+    font-size :1em;
+    text-transform: uppercase;
+}
+.title-section{
+    text-align: center;
+    border-bottom: 4px solid var(--dark);
+    border-top: 4px solid var(--dark);
+    width: 95%;
+    margin: 15px auto 5px;
+}
+
+.title h1{
+    font-family: "chomsky","sans-serif";
+    font-size: 5em;
+}
+.title-caption{
+    font-family: "canopee","sans-serif";
+}
+
+.black-section{
+    background: var(--dark);
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    width: 34%;
+    height: 20vh;
+    padding: 15px;
+    font-family:"akaposse" ;
+}
+.black-section h2{
+    font-size:3em;
+}
+
+.black-section h3{
+    font-size:2em;
+}
+
+
+.fade {
+    animation: fade 4s ease-in 0s 1;
+  }
+  
+  @keyframes fade {
+    0%, 100% {opacity: 0}
+    72% {opacity: 1}
+  }
+
+.first-letter{
+	font-weight: 100;
+    font-family: 'quentin';
+    font-size: 4em;
+}
+
+  .main-content{
+    /* display: flex; */
+    border: 3px solid var(--dark);
+    margin: 5px 20px;
+    padding: 5px;
+  }
+ 
+
+  .top-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .black-intro{
+      background-color: var(--dark);
+      padding:15px;
+      color:var(--light);
+      float:left;
+      width:30%;
+      font-family: "canopee";
+      text-align: center;
+  }
+
+  .black-intro h4{
+      font-size: 3.5em;
+      font-weight:bold;
+  }
+
+  .large-paragraph{
+      padding:5px;
+      width:50%;
+  }
+  .paragraph-small{
+    width: 30%;
+    padding: 5px;
+	text-align:center;
+  }
+
+  .name-section{
+      text-align:center;
+      color:var(--dark);
+      display: inline-block;
+      width: 100%;   
+      font-family: "akaposse";  
+  }
+
+  .name-section h1{
+      font-weight: bolder;
+      font-size:6em;
+  }
+
+  .about-me{
+      display:flex;
+      flex-direction: row;
+
+}
+
+  .image-display{
+    width: 70%;
+    height: 600px;
+    border: 2px solid;
+    overflow: hidden;
+  }
+  .image-display img{
+      width:900px;
+  }
+
+  .image-beside{
+      width:30%;
+      padding:0px 10px;
+  }
+  
+  .skills{
+	      width: 30%;
+    text-align: center;
+    font-family: "canoppe";
+    background: var(--dark);
+    color: var(--light);
+    margin: 5px 0;
+  }
+  
+  .experience{
+	  width:70%;
+	   font-family: "canopee";
+	   text-align:center;
+  }
+  
+  .experience h4{
+	  font-size:2em;
+  }
+  
+  .skills h3{
+	  text-align:center;
+	  text-transform:uppercase;
+	  font-size:3.7em;
+	  font-family:"angelwish";
+  }
+  
+   .experience h3{
+	  text-align:center;
+	  text-transform:uppercase;
+	   font-size:5.6em;
+	  font-family:"angelwish";
+  }
+  
+  .project-title{
+	  margin:10px auto;
+	  padding:5px;
+	  border-bottom:2px solid var(--dark);
+	  border-top:2px solid var(--dark);
+  }
+  
+  .project-title h2{
+	  text-align:center;
+	  font-family:"quentin";
+	  font-size:4em;
+  }
+  
+  .showcase{
+	  display:flex;
+	  flex-direction:row;
+	  flex-wrap:wrap;
+  }
+  
+  .frames{
+	  width:33.33%;
+	  display:flex;
+	  flex-direction:column;
+	  align-items: center;
+	  
+  }
+  
+  .frame-image{
+	border: 2px solid;
+    height: 250px;
+    width: 95%; 
+  }
+ 
+  
+  .invisible-text{
+	  color:transparent;
+	  transition:all 2s ease-out;
+  }
+  
+  
